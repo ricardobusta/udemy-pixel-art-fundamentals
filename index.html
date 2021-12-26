@@ -18,9 +18,7 @@
             image-rendering: -webkit-optimize-contrast;
             -ms-interpolation-mode: nearest-neighbor;
             image-rendering: pixelated;
-        }
-
-        .p128 {
+            background-color: gray;
             width: 128px;
             height: 128px;
         }
@@ -44,43 +42,52 @@
     </ul>
 
     <h3>Animation basics</h3>
-    <p>Exporting 4 frame animations as a gif file.</p>
-    <img class="pixel p128" src="3-first-pixel-a.gif" />
-    <img class="pixel p128" src="3-first-pixel-b.gif" />
+    <p>4 frame animations. Show timeline and add frames. Draw each one. Simple as that.</p>
+    <img class="pixel" src="3-first-pixel-a.gif" />
+    <img class="pixel" src="3-first-pixel-b.gif" />
 
     <h3>Replicating</h3>
     <p>Can use animation onion skin to replicate existing sprites slighlty different.</p>
-    <img class="pixel p128" src="7-replicating.gif" />
+    <img class="pixel" src="7-replicating.gif" />
     <h3>Lines and Curves</h3>
     <p>When drawing lines, making thick lines by connecting pixels not diagonally as well: `Doubles`</p>
     <p>Continuous checkbox in the paint bucket tool: Useful for replacing colors.</p>
-    <img class="pixel p128" style="background-color: white;" src="8-lines-and-curves-a.png" />
+    <img class="pixel" style="background-color: white;" src="8-lines-and-curves-a.png" />
 
     <h3>Shading</h3>
     <p>Not just changing color value to make shades. Changing actual hue is better.</p>
     <p>Moving color closer to yellow makes it brighter. </p>
     <p>Moving color closer to blue makes it darker.</p>
-    <img class="pixel p128" src="9-simple-shading.png" />
+    <img class="pixel" src="9-simple-shading.png" />
 
     <p>Drawing spheres is about making the specular highlight, back shadow proportional and surface reflection.</p>
     <p>Effect can be improved with dithering.</p>
-    <img class="pixel p128" style="background-color: gray;" src="9-simple-shading-b.png" />
+    <img class="pixel" style="background-color: gray;" src="9-simple-shading-b.png" />
     <p>Multiple ways of shading objects. Chair for example.</p>
-    <img class="pixel p128" src="9-simple-shading-c.png" />
+    <img class="pixel" src="9-simple-shading-c.png" />
 
     <h3>Highlighting</h3>
     <p>Similar as shading, use 3D object with similar shape as reference.</p>
     <p>Check if there are global reflections or just simple lighting. (e.g. ceiling/floor reflecting)</p>
-    <img class="pixel p128" style="background-color: gray;" src="10-highlighting.png" />
+    <img class="pixel" style="background-color: gray;" src="10-highlighting.png" />
 
     <h3>Dithering</h3>
     <p>Useful technique to create shading without adding different color levels to the sprite.</p>
     <p>Different patterns to create different density of each component color.</p>
-    <img class="pixel p128" style="background-color: gray;" src="11-dithering-a.png" />
-    <img class="pixel p128" style="background-color: gray;" src="11-dithering-b.png" />
+    <img class="pixel" style="" src="11-dithering-a.png" />
+    <img class="pixel" style="background-color: gray;" src="11-dithering-b.png" />
 
     <h3>Shadows</h3>
+    <p>Good to use more saturated colors (torwards blue) than just grayscale.</p>
+    <p>Keep in mind object shape and perspective when drawing shadows.</p>
+    <p>Usually top-down games have shadows straight down. It's an easier perspective to draw.</p>
+    <img class="pixel" style="background-color: gray;" src="12-shadows-a.png" />
+
     <h3>Outlines</h3>
+    <p>Optional, highlights the object. Can cause it to not feel part of the same world. Use with care.</p>
+    <p>Simpler outline: Just black color. 1 pixel surrounding object.</p>
+    <p>Add doubles for sharp edges (e.g. sword tip)</p>
+    <img class="pixel" style="background-color: gray;" src="13-outlines-a.png" />
     <h3>Color Palettes</h3>
     <h3>Rotating Objects</h3>
     <h3>Camera Angle & Perspectives</h3>
