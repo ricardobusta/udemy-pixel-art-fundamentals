@@ -19,8 +19,8 @@
             -ms-interpolation-mode: nearest-neighbor;
             image-rendering: pixelated;
             background-color: gray;
-            width: 128px;
-            height: 128px;
+            width: 256px;
+            height: 256px;
         }
     </style>
 </head>
@@ -86,10 +86,28 @@
     <h3>Outlines</h3>
     <p>Optional, highlights the object. Can cause it to not feel part of the same world. Use with care.</p>
     <p>Simpler outline: Just black color. 1 pixel surrounding object.</p>
+    <p>Softer outline with darker average color of object part.</p>
     <p>Add doubles for sharp edges (e.g. sword tip)</p>
     <img class="pixel" style="background-color: gray;" src="13-outlines-a.png" />
+    
     <h3>Color Palettes</h3>
+    <p>Same as discussed before: Yellow and dessaturate = Lighter color, Blue and saturate = Darker color.</p>
+    <p>Possible to create palete from sprite, above the active palette: Options -> Create Palette from Sprite.</p>
+    <p>Around 4~5 shades of the same color usually do the job.</p>
+    <p>Cool site with lots of awesome color palettes: <a href="lospec.com/palette-list">lospec.com/palette-list</a>. Export as image and import palette from image.</p>
+    <p>Small hue-shift - Darker mood, more blended colors. More hue-shift: Vibrant colors, cartoonish feeling.</p>
+    <p>More blues = More sad, calm or dull. More reds = More agressive, tension, fear.</p> 
+    
+    <img class="pixel" style="background-color: gray;" src="14-palette-a.png" />
+    <p>"Good color" vs "Bad color" challenge.</p>
+    <img class="pixel" style="background-color: gray;" src="14-palette-b.png" />
+
     <h3>Rotating Objects</h3>
+    <p>Useful to keep same object size. Copying frames and squishing is a good idea.</p>
+    <p>Bobbing up/down and scaling shadow makes it look like it's floating.</p>
+    <img class="pixel" style="background-color: gray;" src="15-rotating-a.gif" />
+    <img class="pixel" style="background-color: gray;" src="15-rotating-b.gif" />
+
     <h3>Camera Angle & Perspectives</h3>
     <h3>Wrap Up</h3>
 
