@@ -1,9 +1,17 @@
 <html>
+
 <head>
     <style>
-        body{
+        body {
             background-color: black;
+            color: white;
         }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
         .pixel {
             image-rendering: -moz-crisp-edges;
             image-rendering: -o-crisp-edges;
@@ -11,17 +19,54 @@
             -ms-interpolation-mode: nearest-neighbor;
             image-rendering: pixelated;
         }
+
         .p128 {
             width: 128px;
             height: 128px;
         }
     </style>
 </head>
+
 <body>
-<img class="pixel p128" src="3-first-pixel-a.gif"/>
-<img class="pixel p128" src="3-first-pixel-b.gif"/>
-<img class="pixel p128" src="7-replicating.gif"/>
-<img class="pixel p128" src="8-lines-and-curves-a.png"/>
-<img class="pixel p128" src="9-simple-shading.png"/>
+    <h1>Udemy Pixel Art Course</h1>
+    <a
+        href="https://www.udemy.com/course/pixel-art-fundamentals/">https://www.udemy.com/course/pixel-art-fundamentals/</a>
+
+    <h2>Fundamental Techniques</h2>
+
+    <h3>Aseprite Shortcuts</h3>
+    <ul>
+        <li> Show timeline: [tab]</li>
+        <li> Play animation: [enter]</li>
+        <li> Pick color: hold [alt]</li>
+        <li> Brush shortcut: [B]</li>
+        <li> Onion skin and property</li>
+    </ul>
+
+    <h3>Animation basics</h3>
+    <p>Exporting 4 frame animations as a gif file.</p>
+    <img class="pixel p128" src="3-first-pixel-a.gif" />
+    <img class="pixel p128" src="3-first-pixel-b.gif" />
+
+    <h3>Replicating</h3>
+    <p>Can use animation onion skin to replicate existing sprites slighlty different.</p>
+    <img class="pixel p128" src="7-replicating.gif" />
+    <h3>Lines and Curves</h3>
+    <p>When drawing lines, making thick lines by connecting pixels not diagonally as well: `Doubles`</p>
+    <p>Continuous checkbox in the paint bucket tool: Useful for replacing colors.</p>
+    <img class="pixel p128" src="8-lines-and-curves-a.png" />
+
+    <h3>Shading</h3>
+    <p>Not just changing color value to make shades. Changing actual hue is better.</p>
+    <p>Moving color closer to yellow makes it brighter. </p>
+    <p>Moving color closer to blue makes it darker.</p>
+    <img class="pixel p128" src="9-simple-shading.png" />
+
+    <h2>Designing Items</h2>
+
+    <h2>UI & HUDs</h2>
+
+    <h2>Game Assets</h2>
 </body>
+
 </html>
