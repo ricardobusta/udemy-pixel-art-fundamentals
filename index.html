@@ -46,7 +46,7 @@
 
         <h2>Fundamental Techniques</h2>
 
-        <h3>Aseprite Shortcuts</h3>
+        <h3 id="0">Aseprite Shortcuts</h3>
         <ul>
             <li> Show timeline: [tab]</li>
             <li> Play animation: [enter]</li>
@@ -55,12 +55,12 @@
             <li> Onion skin and property</li>
         </ul>
 
-        <h3>Animation basics</h3>
+        <h3 id="3">Animation basics</h3>
         <p>4 frame animations. Show timeline and add frames. Draw each one. Simple as that.</p>
         <img class="pixel" src="3-first-pixel-a.gif" /><br /><br />
         <img class="pixel" src="3-first-pixel-b.gif" />
 
-        <h3>Replicating</h3>
+        <h3 id="7">Replicating</h3>
         <p>Can use animation onion skin to replicate existing sprites slighlty different.</p>
         <img class="pixel" src="7-replicating.gif" />
         <h3>Lines and Curves</h3>
@@ -68,43 +68,42 @@
         <p>Continuous checkbox in the paint bucket tool: Useful for replacing colors.</p>
         <img class="pixel" style="background-color: white;" src="8-lines-and-curves-a.png" />
 
-        <h3>Shading</h3>
+        <h3 id="9">Shading</h3>
         <p>Not just changing color value to make shades. Changing actual hue is better.</p>
         <p>Moving color closer to yellow makes it brighter. </p>
         <p>Moving color closer to blue makes it darker.</p>
         <img class="pixel" src="9-simple-shading.png" />
-
         <p>Drawing spheres is about making the specular highlight, back shadow proportional and surface reflection.</p>
         <p>Effect can be improved with dithering.</p>
         <img class="pixel" src="9-simple-shading-b.png" />
         <p>Multiple ways of shading objects. Chair for example.</p>
         <img class="pixel" src="9-simple-shading-c.png" />
 
-        <h3>Highlighting</h3>
+        <h3 id="10">Highlighting</h3>
         <p>Similar as shading, use 3D object with similar shape as reference.</p>
         <p>Check if there are global reflections or just simple lighting. (e.g. ceiling/floor reflecting)</p>
         <img class="pixel" src="10-highlighting.png" />
 
-        <h3>Dithering</h3>
+        <h3 id="11">Dithering</h3>
         <p>Useful technique to create shading without adding different color levels to the sprite.</p>
         <p>Different patterns to create different density of each component color.</p>
         <img class="pixel" src="11-dithering-a.png" /><br /><br />
         <img class="pixel" src="11-dithering-b.png" />
 
-        <h3>Shadows</h3>
+        <h3 id="12">Shadows</h3>
         <p>Good to use more saturated colors (torwards blue) than just grayscale.</p>
         <p>Keep in mind object shape and perspective when drawing shadows.</p>
         <p>Usually top-down games have shadows straight down. It's an easier perspective to draw.</p>
         <img class="pixel" src="12-shadows-a.png" />
 
-        <h3>Outlines</h3>
+        <h3 id="13">Outlines</h3>
         <p>Optional, highlights the object. Can cause it to not feel part of the same world. Use with care.</p>
         <p>Simpler outline: Just black color. 1 pixel surrounding object.</p>
         <p>Softer outline with darker average color of object part.</p>
         <p>Add doubles for sharp edges (e.g. sword tip)</p>
         <img class="pixel" src="13-outlines-a.png" />
 
-        <h3>Color Palettes</h3>
+        <h3 id="14">Color Palettes</h3>
         <p>Same as discussed before: Yellow and dessaturate = Lighter color, Blue and saturate = Darker color.</p>
         <p>Possible to create palete from sprite, above the active palette: Options -> Create Palette from Sprite.</p>
         <p>Around 4~5 shades of the same color usually do the job.</p>
@@ -117,13 +116,13 @@
         <p>"Good color" vs "Bad color" challenge.</p>
         <img class="pixel" src="14-palette-b.png" />
 
-        <h3>Rotating Objects</h3>
+        <h3 id="15">Rotating Objects</h3>
         <p>Useful to keep same object size. Copying frames and squishing is a good idea.</p>
         <p>Bobbing up/down and scaling shadow makes it look like it's floating.</p>
         <img class="pixel" src="15-rotating-a.gif" /><br /><br />
         <img class="pixel" src="15-rotating-b.gif" />
 
-        <h3>Camera Angle & Perspectives</h3>
+        <h3 id="16">Camera Angle & Perspectives</h3>
         <p>Front, side, first-person, isometric</p>
         <p>For "first-person" you want to avoid too much perspective. It's facing you.</p>
         <p>For isometric, line tool + holding shift to keep angle.</p>
@@ -131,7 +130,7 @@
 
         <h2>Designing Items</h2>
 
-        <h3>Simplistic Inventory Items</h3>
+        <h3 id="19">Simplistic Inventory Items</h3>
         <p>Restricting area to same-size like 8x8 make things easier to design.</p>
         <p>Try to keep same style and color palette across the board.</p>
         <img class="pixel p128" src="19-simplistic-inventory-items-a.png" />
@@ -139,36 +138,47 @@
         <img class="pixel p128" src="19-simplistic-inventory-items-c.png" />
         <img class="pixel p128" src="19-simplistic-inventory-items-d.png" />
 
-        <h3>Inventory Items - Rocks</h3>
+        <h3 id="20">Inventory Items - Rocks</h3>
         <p>Base form for rock, solid color. Then shade.</p>
         <p>Similar to sphere shading. Take into acount concave portions of the rock.</p>
         <p>Dithering to make it look less smooth.</p>
         <img class="pixel" src="20-inventory-items-rock.png" />
         
-        <h3>Inventory Items - Lumber</h3>
-        <p>Shape, wood under bark, bark shading, detailing</p>
+        <h3 id="21">Inventory Items - Lumber</h3>
+        <p>Shape, wood under bark, bark shading, detailing.</p>
         <img class="pixel" src="21-inventory-lumber.png" />
 
-        <h3>Designing Weapons</h3>
-        <h3>Designing Armour</h3>
+        <h3 id="22">Designing Weapons</h3>
+        <p>Same as before. Just apply the same techniques.</p>
+        <p>Try out different materials and reflection types.</p>
+        <img class="pixel" src="22-weapons-a.png" />
+
+        <h3 id="23">Designing Armour</h3>
+        <p>Helmets look a bit more spheric.</p>
+        <p>Add lighter color to flatter areas.</p>
+        <p>One more level of highlight color for metallic pieces (Specular).</p>
+        <p>For inside the helmet, use 1 tone down for every color. Specular is the regular lighting.</p>
+        <p>Fill in empty spaces with outline color to make the "back" part.</p>
+        <p>Double edges and highlights to create pointy edges within the object.</p>
+        <img class="pixel" src="23-armour-a.png" />
 
         <h2>UI & HUDs</h2>
 
-        <h3>Icons for Games</h3>
-        <h3>Creating Fonts</h3>
-        <h3>UI Buttons</h3>
-        <h3>Designing Health Bars</h3>
-        <h3>Creating a HUD</h3>
+        <h3 id="26">Icons for Games</h3>
+        <h3 id="27">Creating Fonts</h3>
+        <h3 id="28">UI Buttons</h3>
+        <h3 id="29">Designing Health Bars</h3>
+        <h3 id="30">Creating a HUD</h3>
 
         <h2>Game Assets</h2>
 
-        <h3>Exporting Sprites for Games</h3>
-        <h3>Customizing Assets</h3>
-        <h3>Building a Scene: Layout</h3>
-        <h3>Add a Character</h3>
-        <h3>Add Furniture</h3>
-        <h3>Create Decorations</h3>
-        <h3>Adding Light</h3>
+        <h3  id="33">Exporting Sprites for Games</h3>
+        <h3  id="34">Customizing Assets</h3>
+        <h3  id="35">Building a Scene: Layout</h3>
+        <h3  id="36">Add a Character</h3>
+        <h3  id="37">Add Furniture</h3>
+        <h3  id="38">Create Decorations</h3>
+        <h3  id="39">Adding Light</h3>
     </div>
 </body>
 
